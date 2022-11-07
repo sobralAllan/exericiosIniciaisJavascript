@@ -5,9 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercícios</title>
-    <script type="text/javascript" src="../javascript/funcoes.js"></script>
+    <script type="text/javascript" src="../javascript/formulario.js"></script>
+
+
+
 </head>
-<body>
+<body id="index">
+    <form method="POST">
+        <label id="lNome">Nome: </label>
+        <input type="text" id="tNome" placeholder="Allan Sobral da Silva"/> <br><br>
+        <label id="lTelefone">Telefone: </label>
+        <input class="phone" type="text" id="tTelefone" placeholder="1199999-9999"/> <br><br>
+        <label id="lEndereco">Endereço</label>
+        <input type="text" id="tEndereco" placeholder="R. Jeribatuba, 57"/> <br><br>
+        <label id="lCidade">Cidade</label>
+        <input type="text" id="tCidade" placeholder="São Paulo"/> <br><br>
+        <label id="lUF">UF</label>
+        <input type="text" id="tUF" placeholder="SP"/><br><br>
+        
+    </form>
+    <button type="submit" onclick="coletar()">Cadastrar</button><br><br>
+    <textarea onLoad="coletar()" style="width:15%;height:200px" id="lResultado" readonly></textarea>
+    
     
 </body>
 </html>
